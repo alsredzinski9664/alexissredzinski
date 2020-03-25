@@ -1,0 +1,115 @@
+#Alexis Sredzinski
+#This program will revolve around the popular TV show "The Bachelor", in
+#which potential contestants must apply and meet certain criteria to have
+#a chance to meet and fall inlove with the current bachelor, Peter Webber.
+print ("Welcome to the bachelor application portal!")
+print ("This application process will take roughly 1-2 hours.")
+print (25 * 5) #25 questions and 5 minutes spent on each question (explaining previous statement)
+print ("Please allocate enough time to complete the application in one sitting.")
+print ("Please fill out the following blanks.")
+a = input("What is your name? ")
+print ("Hello", a)
+b = input("what is your age? ")
+print ("You must be atleast 21 to apply", a)
+print ("If you are under the age of 21, please discontinue and apply once you are of age!")
+print ("You must be a citizen of the country stated below.")
+c = "United"
+d = "States"
+print (c + " " + d)
+e = input("Are you a U.S citizen? ")
+f = input("Please enter your social security number: ")
+g = input("Enter your location: ")
+print ("Below will be a recap of your information so far.")
+print ("My name is" + " " + a + " " + "I am" + " " + b + " " + "years old.")
+print ("My social security number is" + " " + f + " " + "and I am from" + " " + g)
+h = input("What are your means of transportation?: ")
+print ("If you have a {} then you may drive or else you will {} to california.".format("car", "fly"))
+print ("California is the location where the show will be shot.")
+print ("The show will take aprox. 2 months to complete.")
+print ("Certain costs of the show will be included such as housing and travel, however costs will not.")
+print ("Cost of food will be aprox. {0:5.3f} U.S dollars per {1}!".format(50.53298, "day"))
+print (50.533 * 7)
+print ("Amount multiplied by one week, equaling 352.731.")
+print (353.731 * 4)
+print ("Amount multiplied by 4 weeks/one month, equaling 1414.924.")
+print (1414.924 * 2)
+print("Amount multiplied by 2 months, equaling 2829.848.")
+print ("One should reserve atleast $2830 for food alone during their bachelor stay.")
+print ("A certain amount of outfits is also recommended as clothing will not be provided.")
+i = input("The amount of outfits do you own: ")
+print ("The recommended amount of outfits would be 50-60.")
+print ("verify if the information below is correct.")
+print ("My name is" + " " + a + " " + "and I own" + " " + i + " " + "amount of outfits.")
+input("Do you own any pets?: ")
+input("Do you have any allergies?: ")
+input("If so, input them: ")
+print("The bachelor corporation is not responsible for any deaths that occur on the show.")
+input("Do you agree to the disclaimer above?: ")
+print("Every minute 280 people apply to the bachelor.")
+print(280*1440) #Amount of applicants multiplied by 24 hours.
+print ("This means that around 403,200 apply every day to become a contestant.")
+print("Your odds are pretty low, however we strive to add diversity to our show.")
+input("Please list all unquie charaeristics: ")
+print("Thank you for applying to The Bachelor.")
+input("Please leave your email and we will contact you soon. ")
+
+#producers have conducted a review of all applicants after several months
+#Those who were among the 30 applicants chosen to become contestants on the bacholor will receive an email.
+print("Congrationaltions bachelor semi-finalist!")
+print("You have been chosen to complete our second portion of the application process!")
+print("Please continute reading on how to complete the additional criteria.")
+print("As part of the wholelistic bachelor experieince, its important to provide information about your personal life.")
+print("Viewers will be wanting to get to know our contestants as well as our bachelor.")
+print("Please fill out the following on the bottom.")
+print("As part of our health inspection policy, we must ask some further health related questions.")
+print("BMI calculator.")
+print("Do you consent to this? ")
+print("To submit yes, enter a number 5 or higher.")
+print("To submit no, enter a number lower than 5.")
+yes = float(input("Enter a number 5 or higher if yes: "))
+no = 4
+if yes > no:
+    print("You have consented.")
+else:
+    print("You have been unable to consent, please discontinue.")
+Height = float(input("Enter your height in meters: "))
+Weight = float(input("Enter your weight in kg: "))
+BMI = Weight / Height ** 2
+if BMI < 25:
+    print("Healthy")
+else:
+    print("Overweight")
+print("If above the BMI calculator states 'overweight',")
+print("please consult a medical physician and discontinue the application process.")
+print("While shooting, there will be medical staff on site at all times.")
+print("Bachelor insurance will be a neccesity and will be payed in full by april 14th.")
+print("Below will be an estimated cost of the monthly insurance price.")
+print(4*234)
+print("Above states the monthly cost of insurance.")
+print("Please amount the funds to cover this cost, as it is neccesary for your safety.")
+print("A randomized medical number will be assigned to you.")
+def main():
+    import random
+    for x in list(range(0,10)):
+        Medical_number = random.randint(1,100)
+        print(Medical_number)
+main()
+print("Please take note of this medical number for furture refernce.")
+nums = [1,2,3,4,5]
+for num in nums:
+    if num == 3:
+        print("Please note previous medical injuries below.")
+        break
+input("Enter any serious medical emerigencies, if none please continue: ")
+print("As part of the marriage process, Peter Webber has picked out some baby names.")
+print("Please read below and memorize the names if you have children with Peter.")
+def my_function(babyname):
+    print(babyname + " Webber")
+
+my_function("Sonny")
+my_function("Charlie")
+my_function("Tyler")
+
+print("Thank you for completeing the second half of our application process.")
+print("We wil be in touch with you soon.")
+       
